@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Single Number</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  let nums = [2, 2, 1, 1, 1, 2, 2];
+  function majorElm(nums) {
+    let obj = {};
+    for (let i = 0; i < nums.length; i++) {
+      if (obj.hasOwnProperty(nums[i])) {
+        obj[nums[i]]++;
+      } else {
+        obj[nums[i]] = 1;
+      }
+    }
+    let max = 0;
+    for (let a in obj) {
+      console.log("@SN ", a, obj[a]);
+      if (obj[a] > obj[a++]) {
+      }
+    }
+  }
+
+  console.log(majorElm(nums));
+</script>
